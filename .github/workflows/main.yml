@@ -1,0 +1,20 @@
+on: push
+name:  Deploy website on push
+jobs:
+  web-deploy:
+    name:  Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name:  Get latest code
+      uses: actions/checkout@v2.3.2
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1'
+    - name:  Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ftp.shayansolutions.com
+        username: sarmad@shayansolutions.com
+        password: 123Shayan456
+        server-dir: public_html/shayansolutions/
