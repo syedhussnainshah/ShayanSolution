@@ -37,7 +37,7 @@
                         <a class="nav-link mx-2" href="#">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="/blog">Blogs</a>
+                        <a class="nav-link mx-2" href="/blog">Blogsssws</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="btn GetStartedBtn" href="#">Get
