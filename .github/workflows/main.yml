@@ -9,14 +9,11 @@ jobs:
       uses: actions/checkout@v2.3.2
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.1'
-    - name: Install Dependencies
-      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
     - name:  Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.shayansolutions.com
-        username: sarmad@shayansolutions.com
-        password: 123Shayan456
-        server-dir: public_html/shayansolutions/
+        server: ftp.syedhussnainshah.tech
+        username: syedhussnainshah.tech
+        password: toptrendingsite@sf
+        server-dir: public_html/deploy/shayansolutions/
